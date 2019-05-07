@@ -226,5 +226,46 @@ namespace studentexercises.Data
             }
         }
 
+        public List<Assignment> GetAllExerciseAssignments()
+        {
+            using (SqlConnection conn = Connection)
+            {
+                conn.Open();
+                using (SqlCommand cmd = conn.CreateCommand())
+                {
+                    cmd.CommandText = $@"SELECT s.firstName , s.lastName, e.Title, e.SoftwareLanguage FROM Students s, Exercises e" +
+                        "from Students s" +
+                        "JOIN StudentExercises x on s.id = x.StudentId" +
+                        "JOIN Exercises e on e.id = x.ExerciseId";
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    List<Assignment> assignments= new List<Assignment>();
+
+                    while (reader.Read())
+                    {
+                        int idPosition = reader.GetOrdinal("Id");
+                        int idValue = reader.GetInt32(idPosition);
+
+                        int positionExerciseId = reader.GetOrdinal("ExerciseId");
+                        int ExerciseId = reader.GetInt32(positionExerciseId);
+
+                        int positionStudentId= reader.GetOrdinal("StudentId");
+                        int StudentId = reader.GetInt32(positionStudentId);
+
+                        Assignment assignment= new Assignment
+                        {
+                            StudentId = StudentId,
+                            ExerciseId = ExerciseId,
+                        };
+                        assignments.Add(assignment);
+                    }
+                    reader.Close();
+
+                    return assignments;
+                }
+            }
+        }
+
     }
 }
