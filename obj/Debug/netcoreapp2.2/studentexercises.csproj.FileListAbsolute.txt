@@ -1,0 +1,11 @@
+C:\Users\Janet\Workspace\studentexercises\bin\Debug\netcoreapp2.2\studentexercises.deps.json
+C:\Users\Janet\Workspace\studentexercises\bin\Debug\netcoreapp2.2\studentexercises.runtimeconfig.json
+C:\Users\Janet\Workspace\studentexercises\bin\Debug\netcoreapp2.2\studentexercises.runtimeconfig.dev.json
+C:\Users\Janet\Workspace\studentexercises\bin\Debug\netcoreapp2.2\studentexercises.dll
+C:\Users\Janet\Workspace\studentexercises\bin\Debug\netcoreapp2.2\studentexercises.pdb
+C:\Users\Janet\Workspace\studentexercises\obj\Debug\netcoreapp2.2\studentexercises.csprojAssemblyReference.cache
+C:\Users\Janet\Workspace\studentexercises\obj\Debug\netcoreapp2.2\studentexercises.csproj.CoreCompileInputs.cache
+C:\Users\Janet\Workspace\studentexercises\obj\Debug\netcoreapp2.2\studentexercises.AssemblyInfoInputs.cache
+C:\Users\Janet\Workspace\studentexercises\obj\Debug\netcoreapp2.2\studentexercises.AssemblyInfo.cs
+C:\Users\Janet\Workspace\studentexercises\obj\Debug\netcoreapp2.2\studentexercises.dll
+C:\Users\Janet\Workspace\studentexercises\obj\Debug\netcoreapp2.2\studentexercises.pdb
